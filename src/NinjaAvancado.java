@@ -15,4 +15,8 @@ public class NinjaAvancado extends NinjaBasico implements Ninja{
         System.out.println("Especialidade: " + this.especialidade);
         System.out.println("-------------------------------------------------");
     }
+
+    public void executarHabilidadeEspecial(){
+        System.out.println("O ninja " + this.nome + " executou a habilidade Especial " + this.especialidade);
+    }
 }
