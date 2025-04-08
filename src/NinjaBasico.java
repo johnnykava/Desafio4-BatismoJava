@@ -1,9 +1,11 @@
+import javax.swing.plaf.multi.MultiPopupMenuUI;
+
 public class NinjaBasico implements Ninja{
     String nome;
     int idade;
-    String habilidade;
+    TipoHabilidade habilidade;
 
-    public NinjaBasico(String nome, int idade, String habilidade) {
+    public NinjaBasico(String nome, int idade, TipoHabilidade habilidade) {
         this.nome = nome;
         this.idade = idade;
         this.habilidade = habilidade;
@@ -20,6 +22,6 @@ public class NinjaBasico implements Ninja{
 
     @Override
     public void excutarHabilidade() {
-        System.out.println("O ninja " + this.nome + " executou a habilidade " + this.habilidade);
+        System.out.println("O ninja " + this.nome + " executou a habilidade " + this.habilidade.getTipoHabilidade());
     }
 }
