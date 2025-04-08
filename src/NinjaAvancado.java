@@ -1,7 +1,7 @@
 public class NinjaAvancado extends NinjaBasico implements Ninja{
-    String especialidade;
+    TipoHabilidade especialidade;
 
-    public NinjaAvancado(String nome, int idade, String habilidade, String habilidadeEspecial) {
+    public NinjaAvancado(String nome, int idade, TipoHabilidade habilidade, TipoHabilidade habilidadeEspecial) {
         super(nome, idade, habilidade);
         this.especialidade = habilidadeEspecial;
     }
@@ -17,6 +17,6 @@ public class NinjaAvancado extends NinjaBasico implements Ninja{
     }
 
     public void executarHabilidadeEspecial(){
-        System.out.println("O ninja " + this.nome + " executou a habilidade Especial " + this.especialidade);
+        System.out.println("O ninja " + this.nome + " executou a habilidade Especial " + this.especialidade.getTipoHabilidade());
     }
 }
